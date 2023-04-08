@@ -1,0 +1,37 @@
+git log
+commit 01703b2b175d8845a7b54e8a28c5b96fa2439acc (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:54:34 2023 +0200
+
+     Fix method sumEvenNumbers
+
+commit c7d0d0bee637083bf27dedf6ec936340a3edac2b
+Merge: 2ed38b9 e678392
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:57:24 2023 +0200
+
+    Merge branch 'bug2'
+
+commit e6783923abc89e93eaf9cb30e01f17a80ad55f0b (origin/bug2, bug2)
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:52:41 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 2ed38b96f788231dc487552f78f1a88853732da9 (origin/bug1, bug1)
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:50:59 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 1e45eb9bf26fbdc11e3097713fa0358a16968c0e
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:41:32 2023 +0200
+
+    Add java class
+
+commit 7c8784e246d9e97d699e8673165759f1a4d3218b
+Author: danilovamarija <127345867+danilovamarija@users.noreply.github.com>
+Date:   Sat Apr 8 15:39:29 2023 +0200
+
+    Initial commit

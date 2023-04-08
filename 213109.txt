@@ -1,0 +1,33 @@
+Најпрво од се го инсталирав Git и на линкот https://github.com/settings/repositories. 
+
+Потоа се најавив на GitHub профилот, таму направив репозиториум SI_2023_lab1_213109 и истиот го направив приватен.
+
+Со командата 'git branch -M master' ја преименував мојата главна гранка во master.
+
+На мојот компјутер креирав директориум со име SI_2023_lab1_213109 и во него го иницијализирав Git  со командата 'git init'.
+
+Мојот локален репозиториум го поврзав со оддалечениот репозиториум со командата 'git remote add origin https://github.com/danilovamarija/SI_2023_lab1_213109.git' .
+
+README.md фајлот го креирав користејќи ја командата 'echo >> README.md', и откако му ја променив содржината го зачував, и ги извршив командите 'git add . ' и 'git commit -m "Initial commit" .
+
+SILab1.java фајлот го креирав користејќи ја командата 'echo >> SILab1.java', и откако му ја променив содржината го зачував, и ги извршив командите 'git add . ' и 'git commit -m "Add java class" .
+
+За синхронизација на сите гранки со оддалечениот репозиториум ја извршив командата 'git push --all' .
+
+Бидејќи моментално се наоѓам на главната гранка master нема потреба да извршувам команда 'git checkout master' , па директно разгранив 3 гранки од master со командите 
+		 git branch bug1
+		 git branch bug2
+		 git branch bug3
+
+Потоа се префрлив на гранката bug1 со командата 'git checkout bug1', ја поправив грешката во for циклусот кој се користи за читање на N-те броеви од стандарден влез.
+
+Се префрлив на гранката bug2 со командата 'git checkout bug2', ја поправив грешката во методот filterOddNumbers , и ги извршив командите 'git add . ' и 'git commit -m "Fix wrong condition in filterOddNumbers" .
+
+Се префрлив на гранката bug3 со командата 'git checkout bug3', ја поправив грешката во методот sumEvenNumbers, и ги извршив командите 'git add . ' и 'git commit -m "Fix method sumEvenNumbers" .
+
+Потоа со командата git push --all origin ги синхронизирав сите гранки со оддалечениот репозиториум.
+
+Се префрлив на гранката master со командата 'git checkout master' и ги извршив следните команди : ' git merge bug1' 'git push --all origin' и 'git merge bug2' 'git push --all origin' за да ги спојам гранките со master гранката и да синхронизирам со оддалечениот репозиториум.
+
+За гранката bug3 , прво се префрлив на гранката bug3 'git checkout bug3' и направив 'git rebase master', бидејќи оваа гранка не може да се спои со Fast Forwarding, па затоа решаваме со Rebase. 
+'git checkout master' 'git merge bug3' 'git push --all --force' (force во случај да има проблеми со пушнување на гранката bug3. 
